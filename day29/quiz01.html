@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz01.html</title>
+    <style>
+        div.head{
+            display: flex;
+            justify-content: space-between;
+        }
+        div.logo{
+            font-weight: bold;
+            color: green;
+            font-size: 30px;
+        }
+        div.img > img{
+            width: 100%;
+        }
+        div.menu{
+            display: flex;
+            border:1px solid grey;
+            margin:15px auto;
+            padding: 0;
+            height: 60px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        ul > li{
+            line-height: 20px;
+            flex: 1;
+            text-align: center;
+            margin: 3px;
+            width: 60px;
+        }
+        div.menu > ul{
+            overflow: hidden;
+            padding-left: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo"><a href="https://www.naver.com">NAVER</a></div>
+        <div>
+            <ul>
+                <li>카페홈</li>
+                <li>이웃</li>
+                <li><select>
+                    <option>가입카페</option>
+                    <option>스타벅스</option>
+                    <option>텐퍼센트</option>
+                    <option>할리스</option>
+                    <option>블루샥</option>
+                    </select>
+                </li>
+                <li>새글</li>
+                <li>내소식</li>
+                <li>채팅</li>
+                <li><button>로그인</button></li>
+                <li><button>🎡</button></li>
+            </ul>
+        </div>        
+    </div>
+    <div class="img">
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20200804/pngtree-light-sense-earth-meteors-cut-across-the-horizon-universe-background-image_376883.jpg" height="150">
+    </div>
+    <div class="menu">
+        <ul>
+            <li>전체글보기</li>
+            <li style="flex: 0.5;">인기글</li>
+            <li style="width: 150px;">이미지모아보기</li>
+            <li style="width: 150px;">카페태그보기</li>
+            <li style="width: 160px;">명예의 전당</li>
+        </ul>
+    </div>
+</body>
+</html>
