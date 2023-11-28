@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz01.html</title>
+    <style>
+        div.all{
+            border: 1px solid black;
+            margin-left:15%;
+            width: 70%;
+            height: 80%;
+        }
+        div.head{
+            border: 1px solid black;
+            padding-left: 15px;
+            margin: 10px;
+            transition-duration : 0.5s;
+        }
+        div.head:hover{
+            background-color: lightblue;
+            color: olive;
+            margin: 15px;
+        }
+        div.main{
+            display: flex;
+        }
+        div.left{
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            width: 20%;
+            transition-duration : 0.5s;
+        }
+        div.left:hover{
+            background-color: lightblue;
+            color: olive;
+            margin: 15px;
+        }
+        div.mid{
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            width: 60%;
+            transition-duration : 0.5s;
+        }
+        div.mid:hover{
+            background-color: lightblue;
+            color: olive;
+            margin: 15px;
+        }
+        div.right{
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            width: 20%;
+            height: 40%;
+            transition-duration : 0.5s;
+            opacity: 0.5;
+        }
+        div.right:hover{
+            background-color: lightblue;
+            color: olive;
+            margin: 15px;
+            opacity: 1;
+        }
+        div.foot{
+            border: 1px solid black;
+            padding-bottom: 25px;
+            padding-left: 10px;
+            margin: 10px;
+            transition-duration : 0.5s;
+        }
+        div.foot:hover{
+            background-color: lightblue;
+            color: olive;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="all">
+        <div class="head">
+            <h1>사이트 제목</h1>
+        </div>
+
+        <div class="main">
+            <div class="left"><h2>사이드바</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="mid">
+                <h2>본문</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente aspernatur earum dolore fugiat nemo, placeat labore facilis a tenetur eius adipisci impedit vel, pariatur iusto vero quasi nobis voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempora delectus eveniet porro blanditiis, iure, reiciendis nostrum laudantium reprehenderit ipsam repellat rem sunt nisi dolor rerum distinctio libero. Sequi, est.</p>
+            </div>
+            <div class="right">
+                <h2>사이드바</h2>
+                <ul>
+                    <li>항목1</li>
+                    <li>항목2</li>
+                    <li>항목3</li>
+                    <li>항목4</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot">
+            <h2>하단</h2>
+            <p>저작권 정보</p>
+            <p>연락처 등</p>
+        </div>
+    </div>
+</body>
+</html>
