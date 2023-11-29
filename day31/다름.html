@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다름.html</title>
+    <style>
+        div.all{
+
+        }
+        div.headall{
+            
+        }
+        div.headall2{
+            width: 86%;
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        div.head{
+            position: fixed;
+            display: flex;
+            font-size: 13px;
+            padding-left: 10px;
+            width: 83%;
+            height: 25px;
+            border-bottom: 0.1px solid aqua;
+            justify-content: space-between;
+        }
+        div.head a{
+            text-decoration: none;
+            flex : 1;
+            padding-left: 19px;
+        }
+        div.header{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            height: 180px;
+            font-weight: bold;
+        }
+        div.icon > div > a > img{
+            width: 23px;
+        }
+        div.menu{
+            justify-content: center;
+            border-top: 0.1px solid aqua;
+            border-bottom: 0.1px solid aqua;
+            height: 50px;
+            width: 90%;
+            position: sticky;
+        }
+        div.icon{
+            display: flex;
+            justify-content: space-between;
+        }
+        div.text{
+            border: 1px solid lightgrey;
+            height: 25px;
+        }
+        div.text > input{
+            border: 0px;
+            width: 83%;
+            cursor: pointer;
+        }
+        div.text > button{
+            border: 0;
+            background-color: white;
+            cursor: pointer;
+        }
+        div.main{
+            width: 86%;
+            margin-left: 7%;
+            margin-right: 7%;
+            
+        }
+        div.banner{
+            
+        }
+        img[src="다름배너.jpg"]{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+        }
+        ul > li{
+            display: flex;
+            flex:1;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+        }
+        ul > li > a{
+            text-decoration: none;
+            font-size: 13px;
+        }
+        ul > li:hover{
+            cursor: pointer;
+            color: hotpink;
+        }
+        ul > li:hover > ol{
+            display: block;
+            background-color:white;
+            width: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        ol{
+            position: absolute;
+            top: 15px;
+            list-style: none;
+            padding-left: 10px;
+            text-align: left;
+            font-size: 12px;
+            display: none;
+        }
+        ol > li{
+            height: 13px;
+            line-height: 25px;
+            padding: 5px;
+            font-size: 10px;
+        }
+        ol > li > a{
+            display: inline;
+            text-decoration: none;
+        }
+        ol > li > a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="headall">
+            <div class="headall2">
+                <div class="head">
+                    <div class="top1">
+                        <a href="">LOGIN</a>
+                        <a href="">CART</a>
+                        <a href="">ORDER</a>
+                        <a href="">MY PAGE</a>
+                        <a href="">BOOKMARK</a>
+                    </div>
+                    <div class="top2">
+                        <a href="">공지사항</a>
+                        <a href="">이벤트</a>
+                        <a href="">상품문의</a>
+                        <a href="">상품후기</a>
+                    </div>
+                </div>
+                <div class="header">
+                        D'ARLES
+                </div>
+                <div class="icon">
+                    <div>
+                        <a href=""><img src="페이스북로고.png"></a>
+                        <a href=""><img src="인스타로고.jpg"></a>
+                        <a href=""><img src="유튜브로고.png"></a>
+                    </div>
+                    <div class="text">
+                        <input type="text"><button>✈</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu1">
+                    <ul>
+                        <li><a href="">≡</a></li>
+                        <li><a href="">RONA Universe</a></li>
+                        <li style="position: relative;><a href="">남성의류</a>
+                            <ol>
+                                <li><a href="">아우터</a></li>
+                                <li><a href="">탑</a></li>
+                                <li><a href="">바텀</a></li>
+                                <li><a href="">바텀</a></li>
+                                <li><a href="">악세서리</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="">아우터</a></li>
+                        <li style="position: relative;"><a href="">탑</a>
+                            <ol>
+                                <li><a href="">니트</a></li>
+                                <li><a href="">셔츠</a></li>
+                                <li><a href="">블라우스</a></li>
+                                <li><a href="">후드/맨투맨</a></li>
+                                <li><a href="">반팔T</a></li>
+                                <li><a href="">긴팔T</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;><a href="">드레스</a>
+                            <ol>
+                                <li><a href="">롱/미디</a></li>
+                                <li><a href="">미니</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;><a href="">바텀</a>
+                            <ol>
+                                <li><a href="">팬츠</a></li>
+                                <li><a href="">스커트</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;><a href="">악세서리</a>                            
+                            <ol>
+                                <li><a href="">ER</a></li>
+                                <li><a href="">NC</a></li>
+                                <li><a href="">BC</a></li>
+                                <li><a href="">Etc</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="main">
+            <div class="banner">
+                <img src="다름배너.jpg">
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
