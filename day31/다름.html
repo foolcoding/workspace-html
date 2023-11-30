@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다름.html</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
         div.head{
             position: sticky;
             top: 0;
@@ -66,9 +73,6 @@
             margin-right: 7%;
             
         }
-        div.banner{
-            
-        }
         img[src="다름배너.jpg"]{
             width: 100%;
         }
@@ -91,7 +95,7 @@
             color: hotpink;
         }
         ul > li:hover > ol{
-            display: block;
+            opacity: 1;
             background-color:white;
             width: 100px;
             padding-top: 20px;
@@ -104,13 +108,16 @@
             padding-left: 10px;
             text-align: left;
             font-size: 12px;
-            display: none;
+            opacity: 0;
+            transition-duration: 0.5s;
+            background-color:white;
+            width: 100px;
         }
         ol > li{
             height: 13px;
             line-height: 25px;
             padding: 5px;
-            font-size: 10px;
+            font-size: 12px;
         }
         ol > li > a{
             display: inline;
@@ -119,45 +126,70 @@
         ol > li > a:hover{
             text-decoration: none;
         }
+        .remote{
+            flex-flow: wrap;
+            width : 40px;
+            position: absolute;
+            top: 200px;
+            left: 1448px;
+            position: fixed;
+        }
+        div.remote ol{
+            opacity: 1;
+            display: none;
+        }
+        div.remote > a:hover > ol{
+            display: block;
+            background-color: black;
+            color: white;
+            width: 100px;
+            padding-bottom: 10px;
+            position: absolute;
+            top: -30px;
+            left: -115px;
+        }
+        .tsd{
+            transition-duration: 0.5s;
+        }
     </style>
 </head>
 <body>
-        
-            <div class="head">
-                <div class="top1">
-                    <a href="">LOGIN</a>
-                    <a href="">CART</a>
-                    <a href="">ORDER</a>
-                    <a href="">MY PAGE</a>
-                    <a href="">BOOKMARK</a>
-                </div>
-                <div class="top2">
-                    <a href="">공지사항</a>
-                    <a href="">이벤트</a>
-                    <a href="">상품문의</a>
-                    <a href="">상품후기</a>
-                </div>
-            </div>
-            <div class="header">
-                    D'ARLES
-            </div>
-        <div class="icon">
-            <div>
-                <a href=""><img src="페이스북로고.png"></a>
-                <a href=""><img src="인스타로고.jpg"></a>
-                <a href=""><img src="유튜브로고.png"></a>
-            </div>
-            <div class="text">
-                <input type="text"><button>🔍</button>
-            </div>
+    <a id="pos1"></a>
+    <div class="head">
+        <div class="top1">
+            <a href="">LOGIN</a>
+            <a href="">CART</a>
+            <a href="">ORDER</a>
+            <a href="">MY PAGE</a>
+            <a href="">BOOKMARK</a>
         </div>
+        <div class="top2">
+            <a href="">공지사항</a>
+            <a href="">이벤트</a>
+            <a href="">상품문의</a>
+            <a href="">상품후기</a>
+        </div>
+    </div>
+    <div class="header tsd">
+            D'ARLES
+    </div>
+    <div class="icon">
+        <div>
+            <a href=""><img src="페이스북로고.png"></a>
+            <a href=""><img src="인스타로고.jpg"></a>
+            <a href=""><img src="유튜브로고.png"></a>
+        </div>
+        <div class="text">
+            <input type="text"><button>🔍</button>
+        </div>
+    </div>
     
     <div class="menu">
         <div class="menu1">
             <ul>
                 <li><a href="">≡</a></li>
                 <li><a href="">RONA Universe</a></li>
-                <li style="position: relative;><a href="">남성의류</a>
+                <li style="position: relative;"><a href="">남성의류</a>
                     <ol>
                         <li><a href="">아우터</a></li>
                         <li><a href="">탑</a></li>
@@ -189,7 +221,8 @@
                         <li><a href="">스커트</a></li>
                     </ol>
                 </li>
-                <li style="position: relative;><a href="">악세서리</a>                            
+                <li style="position: relative;
+                            padding-right: 50px;><a href="">악세서리</a>                            
                     <ol>
                         <li><a href="">ER</a></li>
                         <li><a href="">NC</a></li>
@@ -206,12 +239,29 @@
         </div>
     </div>
 
-    <div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="remote">
+        <a href=""><img src="../day31/버튼/1.png"></a>
+        <a href="" style="position:relative"><img src="../day31/버튼/2.png">
+            <ol><li>검색</li></ol></a>
+        <a href="" style="position:relative"><img src="../day31/버튼/3.png">
+            <ol><li>주문-배송조회</li></ol></a>
+        <a href="" style="position:relative"><img src="../day31/버튼/4.png">
+            <ol><li>장바구니</li></ol></a>
+        <a href="" style="position:relative"><img src="../day31/버튼/5.png">
+            <ol><li>관심상품</li></ol></a>
+        <a href="" style="position:relative"><img src="../day31/버튼/6.png">
+            <ol><li>최근본상품</li></ol></a>
+        <a href="" style="position:relative"><img src="../day31/버튼/7.png">
+            <ol><li>카카오톡 상담</li></ol></a>
+        <a href="#pos1"><img src="../day31/버튼/8.png"></a>
+        <a href="#pos2"><img src="../day31/버튼/9.png"></a>
     </div>
     
-
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <a id="pos2"></a>
 </body>
 
 </html>
